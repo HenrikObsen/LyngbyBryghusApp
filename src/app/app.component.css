@@ -1,0 +1,133 @@
+@charset "UTF-8";
+#logo {
+  height: 30px;
+}
+
+h1 {
+  color: #5e5d5d;
+}
+
+h2 {
+  color: #5e5d5d;
+}
+
+.navbar {
+  margin: 0;
+  height: 42px;
+  background-color: #5A84AF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 400;
+}
+
+.navbar .menu {
+  float: right;
+  width: 45%;
+}
+
+.navbar .brand {
+  width: 52px;
+  float: left;
+  padding: 5px 0 0 10px;
+}
+
+.navbar .brand-text {
+  padding-top: 9px;
+  line-height: 0.8;
+  width: 65%;
+  color: white;
+  text-align: left;
+  float: left;
+}
+
+.navbar .brand-text span {
+  font-size: 10px;
+}
+
+#desktopMenu {
+  float: right;
+  display: none;
+  list-style-type: none;
+  margin: 0 10px 0 0;
+  padding: 4px 0 0 0;
+}
+
+#desktopMenu li {
+  float: right;
+}
+
+#desktopMenu li a {
+  display: block;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+#toggleMenu {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  float: right;
+  margin-top: 0px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#menu-panel {
+  position: relative;
+  z-index: 300;
+  display: none;
+  background-color: #f5f4f4;
+  width: 100%;
+  padding: 30px 0px 20px 0px;
+}
+
+#menu-panel #mobileMenu {
+  list-style-type: none;
+  padding: 0;
+}
+
+#menu-panel #mobileMenu li {
+  border-bottom: 1px solid #e4e3e3;
+  cursor: pointer;
+}
+
+#menu-panel #mobileMenu li a {
+  display: block;
+  padding: 8px;
+  color: #808080;
+  text-decoration: none;
+}
+
+#content {
+  position: absolute;
+  margin: 30px 20px 20px 20px;
+  z-index: 100;
+}
+
+/*  TABLET PORTRÆT - 768px og op
+
+    --------------------------------------- */
+/*  TABLET LANDSKAB OG LILE DESKTOP - 992px og op
+        
+            --------------------------------------- */
+@media only screen and (min-width: 992px) {
+  #toggleMenu {
+    display: none;
+  }
+  #desktopMenu {
+    display: block;
+  }
+  .navbar .brand-text {
+    width: 40%;
+  }
+}
+
+/*  STOR DESKTOP - 1200px og op
+        
+            --------------------------------------- */
+ 
+
+ /*# sourceMappingURL= app.component.css.map */

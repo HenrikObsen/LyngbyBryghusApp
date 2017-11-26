@@ -1,0 +1,33 @@
+@import '../../schared';
+.product-wrapper{
+    border: 1px solid rgb(233, 230, 230);
+    width:100%; 
+    min-height: 95px; 
+    margin:0 0 5px 0;  
+   
+}
+    
+.imageBox{
+    width:20%;
+    float: left;
+    img{
+        margin:5px;
+        width: 90%;
+    }
+}
+    .descriptionBox{
+        padding: 5px 0 0 5px;
+        width: 50%;
+        float:left;
+        font-size: 12px;
+        overflow: hidden;
+        height:85px;
+        
+    }
+
+    .rightBox{
+        width: 20%;
+        float:right;
+        font-size: 12px;
+        padding: 5px 0 0 0;
+    }

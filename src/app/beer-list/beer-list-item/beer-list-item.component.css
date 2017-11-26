@@ -1,0 +1,43 @@
+h1 {
+  color: #5e5d5d;
+}
+
+h2 {
+  color: #5e5d5d;
+}
+
+.product-wrapper {
+  border: 1px solid #e9e6e6;
+  width: 100%;
+  min-height: 95px;
+  margin: 0 0 5px 0;
+}
+
+.imageBox {
+  width: 20%;
+  float: left;
+}
+
+.imageBox img {
+  margin: 5px;
+  width: 90%;
+}
+
+.descriptionBox {
+  padding: 5px 0 0 5px;
+  width: 50%;
+  float: left;
+  font-size: 12px;
+  overflow: hidden;
+  height: 85px;
+}
+
+.rightBox {
+  width: 20%;
+  float: right;
+  font-size: 12px;
+  padding: 5px 0 0 0;
+}
+ 
+
+ /*# sourceMappingURL= beer-list-item.component.css.map */

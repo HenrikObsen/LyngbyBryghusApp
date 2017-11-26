@@ -1,0 +1,9 @@
+
+  <div class="product-wrapper" *ngFor="let beer of data">
+    <div class="imageBox"><img src="http://beerservice.henrikobsen.dk/Images/Small/{{beer.Image}}" /></div>
+<div class="descriptionBox"><b>{{beer.Name}}</b><br/>{{beer.Description}}</div>
+<div class="rightBox">IBU: {{beer.IBU}}<br/>Alc: {{beer.Alcohol}}<br/>Color: {{beer.Color}}<br/>Yeast: {{beer.Yeast}}</div>
+<div style="clear:both;"></div>
+  </div>
+
+

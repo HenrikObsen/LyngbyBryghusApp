@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACCA,AAAA,EAAE,CAAA;EACE,KAAK,EAAC,OAAO;CAChB;;AAED,AAAA,EAAE,CAAA;EACE,KAAK,EAAC,OAAO;CAChB",
+    "sources": [
+        "beer-list.component.scss",
+        "../schared.scss"
+    ],
+    "names": [],
+    "file": "beer-list.component.css"
+}

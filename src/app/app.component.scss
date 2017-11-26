@@ -1,0 +1,149 @@
+@import '../schared';
+
+//***************************** Layout *********************************************
+#logo{
+    height: 30px;
+}
+
+
+
+//***************************** Navbar and desktop menu *********************************************
+.navbar{
+    margin:0;
+    height: 42px;
+    background-color: #5A84AF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:400;
+    
+    .menu{
+        float: right;
+        width:45%;
+    }
+    .brand{
+        width:52px;
+        float: left;
+        padding:5px 0 0 10px;
+    }
+   .brand-text{
+        padding-top: 9px; 
+        line-height: 0.8;
+        width:65%;
+        color: white;
+        text-align: left;
+        float: left;
+    span{
+        
+        font-size: 10px;
+    }
+   
+   }
+}
+
+#desktopMenu{
+    float: right;
+    display: none;
+    list-style-type: none;
+    margin: 0 10px 0 0;
+    padding: 4px 0 0 0;
+        li {
+            float: right;
+        }
+        
+        li a {
+            display: block;
+            padding: 8px;  
+            color: white;
+            text-decoration: none;      
+        }
+    }
+
+//***************************** Mobile Menu *********************************************
+#toggleMenu {
+    
+        position: absolute;    
+        top:8px;    
+        right:10px;    
+        float: right;
+        margin-top: 0px;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+#menu-panel{
+    position: relative;
+    z-index:300;
+    display: none;
+    background-color: rgb(245, 244, 244);
+    width: 100%;    
+    padding: 30px 0px 20px 0px;
+
+    #mobileMenu{        
+        list-style-type: none;        
+         padding:0; 
+       
+        li{
+            border-bottom: 1px solid rgb(228, 227, 227);
+             
+            cursor: pointer;
+
+        }
+        li a{
+            display: block;
+            padding: 8px;  
+            color: #808080;
+            text-decoration: none;  
+        }
+       
+}
+}
+
+//***************************** Content aray *********************************************
+#content{
+    position: absolute;
+    margin:30px 20px 20px 20px;
+    z-index: 100;
+}
+
+
+//***************************** Mediaquerys *********************************************
+/*  TABLET PORTRÆT - 768px og op
+
+    --------------------------------------- */
+
+    @media only screen and (min-width: 768px) {
+        
+        }
+        
+        /*  TABLET LANDSKAB OG LILE DESKTOP - 992px og op
+        
+            --------------------------------------- */
+        
+        @media only screen and (min-width: 992px) {
+        
+            #toggleMenu {
+                display: none;
+            }
+            #desktopMenu{
+                display: block;
+           }
+
+           .navbar{
+            
+            .brand-text{
+                    width:40%;
+                }
+        }
+              
+        
+        }
+        
+        /*  STOR DESKTOP - 1200px og op
+        
+            --------------------------------------- */
+        
+        @media only screen and (min-width: 1200px) {
+            
+        }
