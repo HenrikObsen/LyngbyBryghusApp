@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BeerListItemComponent implements OnInit {
 
   @Input() data: any;
-  
+   
   constructor() { }
 
   ngOnInit() {

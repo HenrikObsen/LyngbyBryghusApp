@@ -1,14 +1,14 @@
 @charset "UTF-8";
-#logo {
-  height: 30px;
-}
-
 h1 {
   color: #5e5d5d;
 }
 
 h2 {
   color: #5e5d5d;
+}
+
+#logo {
+  height: 30px;
 }
 
 .navbar {

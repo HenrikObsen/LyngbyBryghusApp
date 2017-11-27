@@ -3,15 +3,19 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';  
+import { RouterModule, Routes } from '@angular/router';   
 import { HomeComponent } from './home/home.component';
 import { BeerListComponent } from './beer-list/beer-list.component';
 import { BeerListItemComponent } from './beer-list/beer-list-item/beer-list-item.component';
 
-//import { RecipesComponent } from './recipes/recipes.component';
-//import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
-//import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+const appRoutes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent},
+  { path: 'beerlist/:id', component: BeerListComponent},  
+  { path: '**', component: HomeComponent }
+
+];
 
 @NgModule({
   declarations: [
@@ -19,15 +23,15 @@ import { BeerListItemComponent } from './beer-list/beer-list-item/beer-list-item
     HomeComponent,
     BeerListComponent,
     BeerListItemComponent
-    //RecipesComponent,
-    //RecipeListComponent,
-    //RecipeDetailComponent
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: false })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,7 +4,7 @@
     width:100%; 
     min-height: 95px; 
     margin:0 0 5px 0;  
-   
+    font-size: 11px;
 }
     
 .imageBox{
@@ -19,7 +19,6 @@
         padding: 5px 0 0 5px;
         width: 50%;
         float:left;
-        font-size: 12px;
         overflow: hidden;
         height:85px;
         
@@ -28,6 +27,58 @@
     .rightBox{
         width: 20%;
         float:right;
-        font-size: 12px;
         padding: 5px 0 0 0;
     }
+
+//***************************** Mediaquerys *********************************************
+/*  TABLET PORTRÆT - 768px og op
+
+    --------------------------------------- */
+
+    @media only screen and (min-width: 768px) {
+        .product-wrapper{
+            
+                   font-size: 14px;      
+                   
+               }
+        }
+        
+        /*  TABLET LANDSKAB OG LILE DESKTOP - 992px og op
+        
+            --------------------------------------- */
+        
+            @media only screen and (min-width: 992px) {
+                .product-wrapper{
+                    float: left;
+                    width:47%;  
+                    margin: 5px;  
+                    font-size: 14px;      
+                    
+                }
+                .descriptionBox{
+                  height:115px;                    
+                }
+             
+            }
+        
+        /*  STOR DESKTOP - 1200px og op
+        
+            --------------------------------------- */
+        
+        @media only screen and (min-width: 1200px) {
+            
+        }
+
+        @media only screen and (min-width: 1550px) {
+            .product-wrapper{
+                float: left;
+                width:32%;  
+                margin: 5px;  
+                font-size: 14px;      
+                 }
+            .descriptionBox{
+              height:115px;                    
+            }
+         
+        }
+    
