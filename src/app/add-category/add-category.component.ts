@@ -15,7 +15,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class AddCategoryComponent implements OnInit {
-  databasen = 'http://beerservice.henrikobsen.dk/api/Category/test/';  
+  databasen = 'http://beerservice.henrikobsen.dk/api/Category/Add/';  
   
   
   //@ViewChild('f') myForm: NgForm;
@@ -47,7 +47,7 @@ export class AddCategoryComponent implements OnInit {
     
     
     let options = new RequestOptions({ headers: headers });
-    this.http.post(this.databasen, 'test', options)
+    this.http.post(this.databasen, cat, options)
     .subscribe();
 
       }
