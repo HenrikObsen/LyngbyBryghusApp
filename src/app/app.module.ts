@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BeerListComponent } from './beer-list/beer-list.component';
 import { BeerListItemComponent } from './beer-list/beer-list-item/beer-list-item.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     BeerListComponent,
-    BeerListItemComponent
+    BeerListItemComponent,
+    AddCategoryComponent
     
   ],
   imports: [
