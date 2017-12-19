@@ -13,19 +13,23 @@
               </div>            
             
         </nav>
-        <div id="menu-panel">
+        <nav id="menu-panel">
                 <ul class="" id="mobileMenu">
                     
                         <li *ngFor="let cat of data" routerLinkActive="active" class="mobileMenuItem"><a [routerLink]="['/beerlist', cat.ID]">{{cat.Name}}</a></li>
                  </ul>
-        </div>
+                </nav>
        
 <section id="content">
  
   <router-outlet></router-outlet>
   <app-add-category></app-add-category>
 </section>
-  
+  <div id="menuBestilling"><ul><li class="bestillingMenuItem"><a><i class="fa fa-star"></i> Betingelser</a></li><li class="bestillingMenuItem"><a><i class="fa fa-star"></i> Levering</a></li><li class="bestillingMenuItem"><a><i class="fa fa-star"></i> Priser</a></li></ul></div>
+  <div id="menuKontakt"><ul><li class="kontaktMenuItem"><a><i class="fa fa-address-card"></i> Vores adresse</a></li><li class="kontaktMenuItem"><a><i class="fa fa-envelope"></i> Send en mail</a></li><li class="kontaktMenuItem"><a><i class="fa fa-map"></i> Vis på kort</a></li></ul></div>
+<footer id="footer">        
+       <div id="navBestilling"><i class="fa fa-star"></i> Bestilling</div><div id="navContact"><i class="fa fa-phone"></i> Kontakt</div> 
+</footer>
  
 
 

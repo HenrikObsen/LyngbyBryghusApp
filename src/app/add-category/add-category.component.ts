@@ -37,7 +37,6 @@ export class AddCategoryComponent implements OnInit {
 
     this.Name = data;
     this.Sortering = this.data.Sortering;
-   this.test = this.addCat(this.data);
 }
 
   constructor(private http:Http) { }

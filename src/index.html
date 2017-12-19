@@ -13,6 +13,28 @@
             $(".mobileMenuItem").click(function(){
                 $("#menu-panel").slideUp("slow");
             });
+
+            $("#navBestilling").click(function(){               
+                $("#menuBestilling").slideToggle("slow");
+                $("#menuKontakt").slideUp("slow");
+;
+            });
+
+            $(".bestillingMenuItem").click(function(){
+                $("#menuBestilling").slideUp("slow");
+            });
+
+            $("#navContact").click(function(){           
+               
+                $("#menuKontakt").slideToggle("slow");
+                $("#menuBestilling").slideUp("slow");
+
+;
+            });
+
+            $(".kontaktMenuItem").click(function(){
+                $("#menuKontakt").slideUp("slow");
+            });
         });
         </script>
   <meta charset="utf-8">
