@@ -1,0 +1,16 @@
+<h1>Rediger kategori</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Navn</th>
+        <th>Placering</th>
+        <th></th>      
+    </tr>
+    <tr *ngFor="let cat of data; let i = index" id="{{i}}">
+        <td>{{cat.ID}}</td>
+        <td>{{cat.Name}}</td>
+        <td>{{cat.Sortering}}</td>
+        <td><a>Rediger</a> <a (click)="DeleteCat(cat.ID, i)">Slet</a></td>
+    </tr>
+</table>

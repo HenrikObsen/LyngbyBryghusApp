@@ -1,21 +1,21 @@
-
+<h1>Opret kategori</h1>
 <form (ngSubmit)="onSubmit(f.value)" #f="ngForm">
-  
-      <label for="Name">Kategorinavn<label>
-      <input type="text"  id="Name" ngModel name="Name" required>
-    
-  
-      <label for="Sortering">Sortering</label>
-      <input type="number" id="Sortering" value="0" ngModel name="Sortering" required>
-       
-  
-  
+  <table>
+    <tr>
+      <td><label for="Name">Kategorinavn:</label></td>
+      <td><input type="text"  id="Name" ngModel name="Name" required></td>
+    </tr><tr>
+      <td><label for="Sortering">Sortering:</label></td>
+      <td><input type="number" id="Sortering" ngModel name="Sortering" required></td>
+    </tr>
+  </table>
   
   <button type="submit" [disabled]="!f.valid">Submit</button>
+  {{ extractData }}
 
 
 
-
+<!--
 <hr>
 <div class="row" *ngIf="submitted">
 
@@ -25,3 +25,5 @@
 <p>Data: {{ data | json }}</p>
 <p>extractData: {{ extractData }}</p>
 </div>
+-->
+

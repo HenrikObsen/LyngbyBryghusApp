@@ -15,7 +15,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class AddCategoryComponent implements OnInit {
-  databasen = 'http://beerservice.henrikobsen.dk/api/Category/Add/';  
+  databasen = 'http://beerservice.henrikobsen.dk/api/Category/AddCat/';  
   
   
   //@ViewChild('f') myForm: NgForm;
@@ -23,33 +23,31 @@ export class AddCategoryComponent implements OnInit {
   Name='';
   Sortering='';  
   submitted = false;
-  extractData;
+  extractData: number;
   handleErrorObservable;
   test;
 
-  onSubmit(data) {
-    this.submitted = true;
-    this.data = {
-      ID:1,
-      Name: 'some name',
-      Sortering: 3      
-    };
-
-    this.Name = data;
-    this.Sortering = this.data.Sortering;
-}
+  onSubmit(cat) {    
+    this.addCat(cat);
+  }
 
   constructor(private http:Http) { }
 
   addCat(cat :Category) {
-    let headers = new Headers({ 'Content-Type': 'application/json' });
-    
-    
+    //let headers = new Headers({ 'Content-Type': 'application/json' });   
+    //let options = new RequestOptions({ headers: headers });
+   //this.http.post(this.databasen, cat, options)
+    //.subscribe();
+    let headers = new Headers({ 'Authorization': 'TokenValue' });
     let options = new RequestOptions({ headers: headers });
-    this.http.post(this.databasen, cat, options)
-    .subscribe();
 
-      }
+    this.http.post(this.databasen, cat, options)
+    .subscribe( data => this.extractData = data["_body"],
+      error => {
+        console.log(JSON.stringify(error.json()));
+    });
+    }
+
   
 
   ngOnInit() {

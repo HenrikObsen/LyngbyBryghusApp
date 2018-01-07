@@ -23,12 +23,12 @@
 <section id="content">
  
   <router-outlet></router-outlet>
-  <app-add-category></app-add-category>
+ 
 </section>
-  <div id="menuBestilling"><ul><li class="bestillingMenuItem"><a><i class="fa fa-star"></i> Betingelser</a></li><li class="bestillingMenuItem"><a><i class="fa fa-star"></i> Levering</a></li><li class="bestillingMenuItem"><a><i class="fa fa-star"></i> Priser</a></li></ul></div>
+  <div id="menuBestilling"><ul><li class="bestillingMenuItem"><a routerLink="/addcat"><i class="fa fa-circle"></i> Opret kategori</a></li><li class="bestillingMenuItem"><a routerLink="/editcat"><i class="fa fa-circle"></i> Rediger kategori</a></li><li class="bestillingMenuItem"><a><i class="fa fa-circle-thin"></i> Opret øl</a></li><li class="bestillingMenuItem"><a><i class="fa fa-circle-thin"></i> Rediger øl</a></li></ul></div>
   <div id="menuKontakt"><ul><li class="kontaktMenuItem"><a><i class="fa fa-address-card"></i> Vores adresse</a></li><li class="kontaktMenuItem"><a><i class="fa fa-envelope"></i> Send en mail</a></li><li class="kontaktMenuItem"><a><i class="fa fa-map"></i> Vis på kort</a></li></ul></div>
 <footer id="footer">        
-       <div id="navBestilling"><i class="fa fa-star"></i> Bestilling</div><div id="navContact"><i class="fa fa-phone"></i> Kontakt</div> 
+       <div id="navBestilling"><i class="fa fa-cogs"></i> Admin</div><div id="navContact"><i class="fa fa-phone"></i> Kontakt</div> 
 </footer>
  
 

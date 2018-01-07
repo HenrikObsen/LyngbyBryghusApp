@@ -9,11 +9,14 @@ import { HomeComponent } from './home/home.component';
 import { BeerListComponent } from './beer-list/beer-list.component';
 import { BeerListItemComponent } from './beer-list/beer-list-item/beer-list-item.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
+import { EditCategoryComponent } from './edit-category/edit-category.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent},
   { path: 'beerlist/:id', component: BeerListComponent},  
+  { path: 'addcat', component: AddCategoryComponent},
+  { path: 'editcat', component: EditCategoryComponent},
   { path: '**', component: HomeComponent }
 
 ];
@@ -24,7 +27,8 @@ const appRoutes: Routes = [
     HomeComponent,
     BeerListComponent,
     BeerListItemComponent,
-    AddCategoryComponent
+    AddCategoryComponent,
+    EditCategoryComponent
     
   ],
   imports: [
